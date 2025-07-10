@@ -15,5 +15,18 @@ scanf("%s", &codigo);
 
 printf("Digite o nome da cidade: \n");
 scanf("%s", &nomeCidade);
+
+printf("Digite o tamanho da população: \n");
+scanf("%f", &populacao);
+
+printf("Digite a área total do país: \n");
+scanf("%d", &area);
+
+printf("Digite o PIB do país: \n");
+scanf("%f", &PIB);
+
+printf("Digite a quantidade de pontos turísticos existentes: \n");
+scanf("%d", &NPontos);
+
     return 0;
 }
