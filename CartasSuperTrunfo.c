@@ -30,8 +30,8 @@ scanf("%d", &NPontos);
 
 printf("CARTA 1\n");
 printf("Estado:%s \n",estado);
-printf("Código: \n");
-printf("Nome do Cidade: \n");
+printf("Código:%d \n",codigo);
+printf("Nome do Cidade:%s \n",nomeCidade);
 printf("População: \n");
 printf("PIB: \n");
 printf("Numero de pontos turísticos: \n");
