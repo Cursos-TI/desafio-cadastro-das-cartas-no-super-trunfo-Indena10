@@ -17,10 +17,10 @@ printf("Digite o nome da cidade: \n");
 scanf("%s", &nomeCidade);
 
 printf("Digite o tamanho da população: \n");
-scanf("%f", &populacao);
+scanf("%d", &populacao);
 
 printf("Digite a área total do país: \n");
-scanf("%d", &area);
+scanf("%f", &area);
 
 printf("Digite o PIB do país: \n");
 scanf("%f", &PIB);
@@ -32,8 +32,9 @@ printf("CARTA 1\n");
 printf("Estado:%s \n",estado);
 printf("Código:%d \n",codigo);
 printf("Nome do Cidade:%s \n",nomeCidade);
-printf("População: \n");
-printf("PIB: \n");
-printf("Numero de pontos turísticos: \n");
+printf("População: %d \n", populacao);
+printf("A Área to total é: %f \n", area);
+printf("PIB:%f \n", PIB);
+printf("Numero de pontos turísticos:%d \n",NPontos);
 return 0;
 }
