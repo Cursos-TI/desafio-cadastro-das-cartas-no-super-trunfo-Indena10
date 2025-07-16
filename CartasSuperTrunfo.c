@@ -58,8 +58,8 @@ PibPerCapta = (PIB / populacao);
 densidade = (populacao/area);
 PibPerCapta2 = (PIB2/populacao2);
 densidade2 = (populacao2/area2);
-SuperPoder = ((populacao + area + PIB + NPontos + PibPerCapta - densidade);
-SuperPoder2 = ((populacao2 + area2 + PIB2 + NPontos2 + PibPerCapta2 - densidade2);
+SuperPoder = (populacao + area + PIB + NPontos + PibPerCapta - densidade);
+SuperPoder2 = (populacao2 + area2 + PIB2 + NPontos2 + PibPerCapta2 - densidade2);
 
 printf("CARTA 1\n");
 printf("Estado:%s \n",estado);
@@ -87,5 +87,17 @@ printf("Densidade populacional: %f hab/km2 \n", densidade2);
 printf("PIB per Capita: %f reais \n", PibPerCapta2);
 printf("Super Poder: %f\n", SuperPoder2);
 
+printf("\n");
+printf("Comparação de cartas\n");
+
+printf("\n");
+
+printf("Populacao: Carta %d venceu\n", (populacao > populacao2) ?  1 : 2);
+printf("Area: Carta %d venceu\n", (area > area2) ? 1 : 2);
+printf("PIB: Carta %d venceu\n", (PIB > PIB2) ? 1 : 2);
+printf("Pontos Turisticos: Carta %d venceu\n", (NPontos > NPontos2) ? 1 : 2);
+printf("Densidade: Carta %d venceu\n", (densidade < densidade2) ? 1 : 2);
+printf("PIB per Capita: Carta %d venceu\n", (PibPerCapta > PibPerCapta2) ? 1 : 2);
+printf("Super poder : Carta &d venceu\n", (SuperPoder > SuperPoder2) ? 1 : 2 );
 return 0;
 }
