@@ -2,7 +2,7 @@
 
 int main() {
 int populacao,populacao2, NPontos, NPontos2, estado[20],estado2[20];
-float PIB,PIB2, area,area2, densidade, densidade2, PibPerCapta, PibPerCapta2;
+float PIB,PIB2, area,area2, densidade, densidade2, PibPerCapta, PibPerCapta2, SuperPoder, SuperPoder2;
 char nomeCidade[50], nomeCidade2[50],codigo[20],codigo2[20];
 
 printf("Entre com os dados da Carta1\n");
@@ -58,6 +58,8 @@ PibPerCapta = (PIB / populacao);
 densidade = (populacao/area);
 PibPerCapta2 = (PIB2/populacao2);
 densidade2 = (populacao2/area2);
+SuperPoder = ((populacao + area + PIB + NPontos + PibPerCapta - densidade);
+SuperPoder2 = ((populacao2 + area2 + PIB2 + NPontos2 + PibPerCapta2 - densidade2);
 
 printf("CARTA 1\n");
 printf("Estado:%s \n",estado);
@@ -69,6 +71,7 @@ printf("PIB:%.f \n", PIB);
 printf("Numero de pontos turísticos:%d \n",NPontos);
 printf("Densidade populaacional: %f hab/km2 \n", densidade);
 printf("PIB per Capita: %f reais \n", PibPerCapta);
+printf("Super Poder: %f\n", SuperPoder);
 
 printf("\n");
 
@@ -82,6 +85,7 @@ printf("PIB:%.f \n", 2);
 printf("Numero de pontos turísticos:%d \n",NPontos2);
 printf("Densidade populacional: %f hab/km2 \n", densidade2);
 printf("PIB per Capita: %f reais \n", PibPerCapta2);
+printf("Super Poder: %f\n", SuperPoder2);
 
 return 0;
 }
